@@ -1,0 +1,493 @@
+/* Common css starts here */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "sora", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  line-height: 1.2;
+}
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+:root{
+  --primary-color: #000;
+  --secondary-color: #fff;
+  --section-container-padding: 24px 0;
+  --section-container-margin: 30px 0;
+}
+
+.btn{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 16px 20px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Common css ends here */
+
+/* navbar css starts here */
+#navbar{
+  background-color: var(--secondary-color)
+}
+
+.nav-container{
+  padding: var(--section-container-padding);
+  margin: var(--section-container-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+.nav-container picture{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-text{
+  font-size: 20px;
+  font-weight: 600;
+  padding: 0 15px;
+}
+
+.menu-container ul{
+  display: flex;
+  gap: 32px;
+}
+
+.menu-container ul li a{
+  color: var(--primary-color);
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.menu-container ul li a:hover{
+  border-bottom: 3px solid var(--primary-color);
+}
+/* navbar css ends here */
+
+/* hero css starts here */
+#hero{
+  background-color: var(--secondary-color);
+}
+
+.hero-container{
+  padding: var(--section-container-padding);
+  margin: var(--section-container-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text{
+  width: 600px;
+}
+
+h1{
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 1.8;
+}
+
+h1 span{
+  font-weight: 900;
+}
+
+.hollow-text{
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-fill-color: var(--secondary-color);
+  -webkit-text-stroke: 2.5px ;
+}
+
+.hero-text p{
+  margin-top: 32px;
+  margin-bottom: 94px;
+  color: #71717A;
+  padding-right: 20px;
+}
+
+.hero-social{
+  display:flex;
+  width: 320px;
+  justify-content: space-between;
+}
+
+.social-icon{
+  width: 56px;
+  height: 56px;
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+.social-icon:hover{
+  border-radius: 5px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.hero-image{
+  height: 596px;
+  width: 720px;
+  overflow: hidden;
+}
+
+/* hero css ends here */
+
+/* skill css starts here */
+#skills{
+  background-color: var(--secondary-color);
+}
+
+.skill-container{
+  padding: var(--section-container-padding);
+  margin: var(--section-container-margin); 
+  text-align: center;
+
+}
+
+.skill-container h1{
+  padding: 20px 0;
+}
+
+.skill-list{
+  padding: 40px 0;
+  display: flex;
+  row-gap: 40px;
+  column-gap: 70px;
+  flex-wrap: wrap;
+}
+
+.skill-item{
+  width: 186px;
+  height: 186px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid var(--primary-color);
+}
+
+.skill-item h5{
+  font-size: 20px;
+}
+
+.skill-item:hover{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  
+}
+
+/* skill css endss here */
+
+/* experince css starts here */
+#experience{
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+
+.experience-container{
+  padding: var(--section-container-padding);
+  margin: var(--section-container-margin);
+  text-align: center;
+}
+
+.experience-container h1{
+  padding: 20px 0;
+}
+
+.experience-list{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 40px 10px;
+}
+
+.experience-item{
+  padding: 20px;
+  border: 1px solid #71717A;
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+  color: var(--secondary-color);
+}
+
+.experience-item:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.experience-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience-title-left{
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+
+.experience-title-right{
+  color: #71717A;
+}
+
+.experience-title-left p{
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.experience-item-body{
+  text-align: justify;
+  color: #cdcdd1;
+}
+
+/* experince css ends here */
+
+/* about me summary starts here */
+#about-me-summary{
+  background-color: var(--secondary-color);
+}
+
+.about-summary-container{
+  padding: var(--section-container-padding);
+  margin: var(--section-container-margin);
+  text-align: center;
+}
+
+.about-summary-container h1{
+  padding: 20px 0;
+}
+
+.about-summary-content{
+  display: flex;
+  gap: 32px;
+  padding: 40px 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-summary-left{
+  height: 572px;
+  overflow: hidden;
+  
+}
+
+.about-summary-right{
+  width: 600px;
+}
+
+.about-summary-right h3{
+  text-align: left;
+  font-size: 32px;
+}
+
+.about-summary-right p{
+  padding: 20px 0;
+  text-align: justify;
+  color: #71717A;
+  font-size: 20px;
+}
+
+/* about me summary endss here */
+
+/* my project css starts here */
+
+#my-projects{
+  background-color: var(--primary-color);
+}
+
+.my-project-container{
+  padding: var(--section-container-padding);
+  margin: var(--section-container-margin);
+}
+
+.my-project-container h1{
+  color: var(--secondary-color);
+  padding: 20px 0;
+  text-align: center;
+}
+
+.my-project-list{
+  margin: 20px 0;
+  padding: 0;
+}
+
+.my-project-mock-image{
+  width: 594px;
+}
+
+.my-project-item{
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-project-mock-details{
+  width: 582px;
+}
+
+.my-project-mock-details h1{
+  text-align: left;
+  padding: 20px 0;
+}
+
+.my-project-mock-details h3{
+  color: var(--secondary-color);
+  font-size: 32px;
+  padding-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.my-project-mock-details p{
+  color: #71717A;
+  text-align: justify;
+}
+
+.my-project-container button{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  margin-bottom: 20px;
+}
+/* my project css ends here */
+
+/* testimonial css starts here */
+#testimonial{
+  background-color: var(--secondary-color);
+}
+
+.testimonial-container{
+  padding: var(--section-container-padding);
+  margin: var(--section-container-margin);
+}
+
+.testimonial-container h1{
+  text-align: center;
+  padding: 20px 0;
+}
+
+.testimonial-list{
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.testimonial-card{
+  width: 370px;
+  height: 400px;
+  border: 1px solid #71717A;
+  border-radius: 15px;
+  justify-items: center;
+}
+
+.testimonial-card:hover{
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+.testimonial-card-img-box{
+  position: relative;
+  margin-top: 30px;
+  height: 96px;
+  width: 96px;
+}
+
+.testimonial-card-img{
+  height: 96px;
+  width: 96px;
+  border-radius: 50%;
+  border: 1px solid #71717A;
+}
+
+.quote{
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin-top: -35px;
+  margin-left: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-card p{
+  padding: 24px 15px;
+  text-align: center;
+}
+
+.horizontal-line{
+  margin: 20px 0;
+  height: 0px;
+  width: 150px;
+  border: 1px solid #57575e;
+}
+
+.testimonial-card h4{
+  padding: 20px 0;
+  font-size: 24px;
+  color: #57575e;
+}
+
+.testimonial-card h5{
+  
+  font-size: 15px;
+  color: #414144;
+}
+/* testimonial css ends here */
+
+/* footer css starts here */
+#footer{
+  background-color: var(--primary-color);
+}
+
+.footer-container{
+  margin: var(--section-container-margin);
+  padding: var(--section-container-padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--secondary-color);
+}
+
+.footer-container picture{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--secondary-color);
+}
+/* footer css ends here */
